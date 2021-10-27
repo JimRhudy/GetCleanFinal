@@ -1,7 +1,7 @@
 # GetCleanFinal
 This repo hosts my materials submitted for peer review in the Getting and Cleaning Data final project.
 
-This README highlights the analysis steps I undertook to complete the project. For a detailed list, including code chunks and illustrative output, please refer to my finalReadMe.html document.
+This README highlights the analysis steps I undertook to complete the project. For a detailed list, including code chunks and illustrative output, please refer to my finalReadMe.pdf document.
 
 Getting and Cleaning Data Final Project, Jim Rhudy, 10/25/2021
 
@@ -33,7 +33,7 @@ I recoded the activity labels from numeric to descriptive text. The output of th
 
 ##Step Five: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-Components of tidy data specify that (1) each variable should be in one column and that (2) each observation should be in a different row. Inspection of a larger sample of the output of the previous step, shown in my finalReadMe.html, demonstrates this. The names of the first three columns specify descriptive activity, subject, and activity labels; the other column names represent a list of 79 different measurements either collected or calculated during each experiment undertaken by a subject during a particular activity. The dataset resulting from the previous step is tidy because both the above conditions are met. Each unique variable completely occupies a single column and the outcomes of each unique experiment completely occupy a single row.
+Components of tidy data specify that (1) each variable should be in one column and that (2) each observation should be in a different row. Inspection of a larger sample of the output of the previous step, shown in my finalReadMe.pdf, demonstrates this. The names of the first three columns specify descriptive activity, subject, and activity labels; the other column names represent a list of 79 different measurements either collected or calculated during each experiment undertaken by a subject during a particular activity. The dataset resulting from the previous step is tidy because both the above conditions are met. Each unique variable completely occupies a single column and the outcomes of each unique experiment completely occupy a single row.
 
 Given that each of 30 subjects undertook each of six different activities, there are 180 possible distinct combinations of subject and activity; however, the dataset contains 10,299 rows, each reporting measurements from a single experiment. This can be explained by the multivariate time-series design of the overall study. Each of the subject and activity combinations occurs many times in the dataset; this number ranges from 36 to 95.There are 46 and 33 columns which report mean and standard deviation data, respectively. These findings would tend to hinder rectangular pivoting. The documentation accompanying the data download does not explicitly account for this variability, nor does the metadata available on the webpage. I do not have the substantive knowledge to fully interpret the given variable labels and render them more human-readable so I did not attempt this.
  
